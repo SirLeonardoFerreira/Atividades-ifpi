@@ -1,9 +1,13 @@
-hora = int(input("Digite quantos horas são: "))
-minuto = int(input("Digite quantos minutos são: "))
-segundo = int(input("Digite quantos segundos são: "))
+def segundos(hr, minu, segun):
+    return (((hr * 60) + minu ) * 60) + segun 
 
-hora_minuto = hora * 60
-minuto_segundo = (hora_minuto + minuto) * 60
-segundo_totais = minuto_segundo + segundo
 
-print(f"Desde a última noite, passaram {segundo_totais:.2f} segundos")
+def main():
+    hora = int(input("Digite quantos horas são: "))
+    minuto = int(input("Digite quantos minutos são: "))
+    segundo = int(input("Digite quantos segundos são: "))
+    segundo_totais = segundos(hora, minuto, segundo)
+    print(f"Desde a última noite, passaram {segundo_totais:.2f} segundos")
+
+if __name__ == '__main__':
+    main()
