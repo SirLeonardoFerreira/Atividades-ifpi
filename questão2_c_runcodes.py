@@ -3,9 +3,9 @@ def triplo (valor):
 
 
 def main():
-    valor_x = int(input("Digite o valor de x: "))
+    valor_x = int(input())
     valor_triplo = triplo(valor_x)
-    print(f"O triplo é: {valor_triplo:.2f}")
+    print(f"{valor_triplo:.2f}")
 
 if __name__ == '__main__':
     main()
