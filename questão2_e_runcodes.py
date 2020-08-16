@@ -16,7 +16,9 @@ def main():
     volume_da_sala = volume_sala(largura, comprimento, altura)
     area_das_paredes_da_sala = parede_sala(largura, comprimento, altura)
 
-    print(f"{area_do_piso_da_sala:.2f} metros, {volume_da_sala:.2f} {area_das_paredes_da_sala:.2f}")
+    print(f"{area_do_piso_da_sala:.2f}")
+    print(f"{volume_da_sala:.2f}")
+    print(f"{area_das_paredes_da_sala:.2f}")
 
 if __name__ == '__main__':
     main()
