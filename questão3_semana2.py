@@ -7,7 +7,6 @@ def tempo(segundos):
 def main():
     valor_segundos = int(input("Digite a quantidade de segundos que o evento durou: "))
     h, m, s = tempo(valor_segundos)
-    print(f'o evento durou {h} horas, {m} minutos e {s} segundos.')
-
+    print(f'o evento durou {h}H:{m}M:{s}S.')
 if __name__ == '__main__':
     main()
